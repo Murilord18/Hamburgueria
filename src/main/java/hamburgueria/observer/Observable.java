@@ -1,4 +1,4 @@
-package hamburgueria.Observer;
+package hamburgueria.observer;
 
 public interface Observable {
     void adicionarObserver(PedidoObserver observer);

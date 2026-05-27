@@ -1,4 +1,4 @@
-package hamburgueria.Observer;
+package hamburgueria.observer;
 
 public interface PedidoObserver {
     void notificar(String status);
