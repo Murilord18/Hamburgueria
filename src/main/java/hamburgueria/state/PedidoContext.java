@@ -1,19 +1,25 @@
 package hamburgueria.state;
 
-public class PedidoContext {
+import hamburgueria.observer.Observable;
+import hamburgueria.observer.PedidoObserver;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class PedidoContext implements Observable {
 
     private PedidoState estado;
     private final String nomeLanche;
+    private final List<PedidoObserver> observers = new ArrayList<>();
 
     public PedidoContext(String nomeLanche) {
         this.nomeLanche = nomeLanche;
-        this.estado = new EstadoPedidoFeito();
-        System.out.println("Pedido criado: " + nomeLanche + " | Estado: " + estado.getNome());
+        this.estado = new StatePedidoFeito();
     }
 
     public void setEstado(PedidoState novoEstado) {
         this.estado = novoEstado;
-        System.out.println("Novo estado: " + estado.getNome());
+        notificarObservers(); // ← notifica a cada transição
     }
 
     public void confirmar() { estado.confirmar(this); }
@@ -24,4 +30,15 @@ public class PedidoContext {
 
     public String getEstadoAtual() { return estado.getNome(); }
     public String getNomeLanche()  { return nomeLanche; }
+
+    @Override
+    public void adicionarObserver(PedidoObserver observer) { observers.add(observer); }
+
+    @Override
+    public void removerObserver(PedidoObserver observer) { observers.remove(observer); }
+
+    @Override
+    public void notificarObservers() {
+        for (PedidoObserver o : observers) o.notificar(estado.getNome());
+    }
 }
