@@ -19,7 +19,7 @@ public class PedidoContext implements Observable {
 
     public void setEstado(PedidoState novoEstado) {
         this.estado = novoEstado;
-        notificarObservers(); // ← notifica a cada transição
+        notificarObservers(); 
     }
 
     public void confirmar() { estado.confirmar(this); }
