@@ -1,8 +1,8 @@
 package hamburgueria.decorator;
 
-public class CebolaCaramelizada extends IngredienteDecorator {
+public class CebolaCaramelizadaExtra extends IngredienteDecorator {
 
-    public CebolaCaramelizada(LancheBase lancheDecorado) {
+    public CebolaCaramelizadaExtra(LancheBase lancheDecorado) {
         super(lancheDecorado);
     }
 
