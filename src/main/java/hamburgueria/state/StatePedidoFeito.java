@@ -15,5 +15,6 @@ public class StatePedidoFeito extends PedidoState {
     }
 
     @Override
-    public String getNome() { return "Pedido Feito"; }
+    public String getNome() {
+        return "Pedido Feito"; }
 }

@@ -7,6 +7,7 @@ public class PedidoImediato extends PedidoEntrega {
 
     @Override
     public String enviar() {
+
         return "[IMEDIATO] " + entrega.realizarEntrega(endereco);
     }
 }

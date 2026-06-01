@@ -28,8 +28,11 @@ public class PedidoContext implements Observable {
     public void enviar()    { estado.enviar(this);    }
     public void cancelar()  { estado.cancelar(this);  }
 
-    public String getEstadoAtual() { return estado.getNome(); }
-    public String getNomeLanche()  { return nomeLanche; }
+    public String getEstadoAtual() {
+        return estado.getNome(); }
+
+    public String getNomeLanche()  {
+        return nomeLanche; }
 
     @Override
     public void adicionarObserver(PedidoObserver observer) { observers.add(observer); }

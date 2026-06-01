@@ -48,7 +48,12 @@ public class Pedido implements Observable {
         notificarObservers();
     }
 
-    public Status getStatus() { return status; }
-    public int getId() { return id; }
-    public String getLanche() { return lanche; }
+    public Status getStatus() {
+        return status; }
+
+    public int getId() {
+        return id; }
+
+    public String getLanche() {
+        return lanche; }
 }

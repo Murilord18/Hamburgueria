@@ -14,6 +14,9 @@ public class Cliente implements PedidoObserver {
         System.out.println("Cliente " + nome + " notificado: " + status);
     }
 
-    public String getUltimaNotificacao() { return ultimaNotificacao; }
-    public String getNome() { return nome; }
+    public String getUltimaNotificacao() {
+        return ultimaNotificacao; }
+
+    public String getNome() {
+        return nome; }
 }
