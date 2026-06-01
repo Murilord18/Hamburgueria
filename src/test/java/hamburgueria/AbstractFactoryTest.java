@@ -24,12 +24,12 @@ public class AbstractFactoryTest {
     @Test
     public void testComboPremiumLanche() {
         LancheFactory factory = new ComboPremiumFactory();
-        assertEquals("X-Bacon Duplo", factory.criarLanche().getNome());
+        assertEquals("X-Burguer", factory.criarLanche().getNome());
     }
 
     @Test
     public void testComboPremiumAcompanhamento() {
         LancheFactory factory = new ComboPremiumFactory();
-        assertEquals("Batata Frita G + Onion Rings", factory.criarAcompanhamento().getNome());
+        assertEquals("Batata Frita P + Onion Rings", factory.criarAcompanhamento().getNome());
     }
 }
