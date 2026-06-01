@@ -7,8 +7,10 @@ public class OvoExtra extends IngredienteDecorator {
     }
 
     @Override
-    public String getDescricao() { return lancheDecorado.getDescricao() + " + Ovo"; }
+    public String getDescricao() {
+        return lancheDecorado.getDescricao() + " + Ovo"; }
 
     @Override
-    public double getPreco() { return lancheDecorado.getPreco() + 2.00; }
+    public double getPreco() {
+        return lancheDecorado.getPreco() + 2.00; }
 }

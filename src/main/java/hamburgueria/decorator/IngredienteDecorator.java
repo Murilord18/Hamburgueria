@@ -8,10 +8,12 @@ public abstract class IngredienteDecorator implements LancheBase {
     }
 
     @Override
-    public String getDescricao() { return lancheDecorado.getDescricao(); }
+    public String getDescricao() {
+        return lancheDecorado.getDescricao(); }
 
     @Override
-    public double getPreco() { return lancheDecorado.getPreco(); }
+    public double getPreco() {
+        return lancheDecorado.getPreco(); }
 }
 
 

@@ -7,8 +7,10 @@ public class BaconExtra extends IngredienteDecorator {
     }
 
     @Override
-    public String getDescricao() { return lancheDecorado.getDescricao() + " + Bacon Extra"; }
+    public String getDescricao() {
+        return lancheDecorado.getDescricao() + " + Bacon Extra"; }
 
     @Override
-    public double getPreco() { return lancheDecorado.getPreco() + 4.00; }
+    public double getPreco() {
+        return lancheDecorado.getPreco() + 4.00; }
 }

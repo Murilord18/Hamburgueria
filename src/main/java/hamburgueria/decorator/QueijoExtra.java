@@ -7,8 +7,10 @@ public class QueijoExtra extends IngredienteDecorator {
     }
 
     @Override
-    public String getDescricao() { return lancheDecorado.getDescricao() + " + Queijo"; }
+    public String getDescricao() {
+        return lancheDecorado.getDescricao() + " + Queijo"; }
 
     @Override
-    public double getPreco() { return lancheDecorado.getPreco() + 2.50; }
+    public double getPreco() {
+        return lancheDecorado.getPreco() + 2.50; }
 }

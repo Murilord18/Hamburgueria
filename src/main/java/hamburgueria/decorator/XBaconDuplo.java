@@ -1,11 +1,11 @@
 package hamburgueria.decorator;
 
-public class XSalada implements LancheBase{
+public class XBaconDuplo implements LancheBase {
     @Override
     public String getDescricao() {
-        return "X-Salada"; }
+        return "X-Bacon Duplo"; }
 
     @Override
     public double getPreco() {
-        return 22.00; }
+        return 32.90; }
 }
