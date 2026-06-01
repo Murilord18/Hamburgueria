@@ -15,7 +15,7 @@ public class Cardapio {
     
     private Cardapio() {
         lanches.add(new Lanche("X-Burguer", 18.90));
-        lanches.add(new Lanche("X-Bacon Duplo", 32.90));
+        lanches.add(new Lanche("X-Bacon", 24.90));
         lanches.add(new Lanche("X-Salada", 22.00));
     }
     public static Cardapio getInstancia() {
