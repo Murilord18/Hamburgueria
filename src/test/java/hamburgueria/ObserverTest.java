@@ -1,4 +1,4 @@
-package Hamburgueria;
+package hamburgueria;
 
 import hamburgueria.model.Pedido;
 import hamburgueria.observer.Cliente;

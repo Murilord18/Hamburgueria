@@ -1,4 +1,4 @@
-package Hamburgueria;
+package hamburgueria;
 
 import hamburgueria.factory.ComboPremiumFactory;
 import hamburgueria.factory.ComboTradicionalFactory;

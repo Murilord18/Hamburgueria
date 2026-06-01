@@ -1,4 +1,4 @@
-package Hamburgueria;
+package hamburgueria;
 
 import hamburgueria.bridge.EntregaMotoboy;
 import hamburgueria.bridge.EntregaRetirada;

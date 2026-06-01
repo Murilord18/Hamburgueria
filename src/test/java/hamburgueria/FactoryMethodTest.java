@@ -1,4 +1,4 @@
-package Hamburgueria;
+package hamburgueria;
 
 import hamburgueria.factory.PedidoCreator;
 import hamburgueria.model.Pedido;

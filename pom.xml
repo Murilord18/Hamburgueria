@@ -11,7 +11,7 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>Hamburgueria - Design Patterns</name>
+    <name>hamburgueria - Design Patterns</name>
     <description>
         Projeto de hamburgueria demonstrando padrões de projeto:
         Singleton, Abstract Factory, Factory Method, Decorator,
