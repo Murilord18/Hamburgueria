@@ -16,6 +16,16 @@ public class PedidoPersonalizado {
     private final String observacoes;
 
 
+    PedidoPersonalizado(PedidoPersonalizadoBuilder builder) {
+        this.nomeLanche         = builder.nomeLanche;
+        this.nomeCliente        = builder.nomeCliente;
+        this.ingredientesExtras = builder.ingredientesExtras;
+        this.tipoEntrega        = builder.tipoEntrega;
+        this.enderecoEntrega    = builder.enderecoEntrega;
+        this.descontoAplicado   = builder.descontoAplicado;
+        this.observacoes        = builder.observacoes;
+    }
+
 
     public String getNomeLanche() {
         return nomeLanche;
