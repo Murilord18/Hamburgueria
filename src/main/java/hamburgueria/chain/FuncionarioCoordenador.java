@@ -10,7 +10,7 @@ public class FuncionarioCoordenador extends Funcionario {
     @Override
     public String processar(AprovarPedido pedido) {
         if (podeProcessar(pedido.getTipo())) {
-            return "Gerente resolveu: " + pedido.getDescricao()
+            return "Coordenador aprovou encomenda: " + pedido.getDescricao()
                     + " [" + pedido.getTipo().getTipo() + "]";
         }
         return super.processar(pedido);
@@ -18,6 +18,6 @@ public class FuncionarioCoordenador extends Funcionario {
 
     @Override
     public String getNome() {
-        return "Gerente";
+        return "Coordenador";
     }
 }

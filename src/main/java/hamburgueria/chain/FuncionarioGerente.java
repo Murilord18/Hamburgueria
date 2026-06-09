@@ -10,7 +10,7 @@ public class FuncionarioGerente extends Funcionario {
     @Override
     public String processar(AprovarPedido pedido) {
         if (podeProcessar(pedido.getTipo())) {
-            return "Dono autorizou: " + pedido.getDescricao()
+            return "Gerente autorizou: " + pedido.getDescricao()
                     + " [" + pedido.getTipo().getTipo() + "]";
         }
         return super.processar(pedido);
@@ -18,6 +18,6 @@ public class FuncionarioGerente extends Funcionario {
 
     @Override
     public String getNome() {
-        return "Dono";
+        return "Gerente";
     }
 }
