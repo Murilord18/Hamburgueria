@@ -1,6 +1,6 @@
 package hamburgueria.strategy;
 
-public class DescontoPromocao implements DescontoStrategy {
+public class DescontoCupom implements DescontoStrategy {
 
     private static final double PERCENTUAL = 0.20;
 

@@ -1,9 +1,8 @@
 package hamburgueria;
 
-import hamburgueria.strategy.*;
 import hamburgueria.strategy.CarrinhoCompras;
 import hamburgueria.strategy.DescontoFidelidade;
-import hamburgueria.strategy.DescontoPromocao;
+import hamburgueria.strategy.DescontoCupom;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
@@ -29,7 +28,7 @@ public class StrategyTest {
     @Test
     public void testDescontoPromocao20Porcento() {
         CarrinhoCompras carrinho = new CarrinhoCompras(100.0);
-        carrinho.setDescontoStrategy(new DescontoPromocao());
+        carrinho.setDescontoStrategy(new DescontoCupom());
         assertEquals(80.0, carrinho.calcularTotal(), DELTA);
     }
 
@@ -40,7 +39,7 @@ public class StrategyTest {
         carrinho.setDescontoStrategy(new DescontoFidelidade());
         assertEquals(170.0, carrinho.calcularTotal(), DELTA);
 
-        carrinho.setDescontoStrategy(new DescontoPromocao());
+        carrinho.setDescontoStrategy(new DescontoCupom());
         assertEquals(160.0, carrinho.calcularTotal(), DELTA);
     }
 
@@ -64,7 +63,7 @@ public class StrategyTest {
     @Test
     public void testDescricaoDescontoPromocao() {
         CarrinhoCompras carrinho = new CarrinhoCompras(50.0);
-        carrinho.setDescontoStrategy(new DescontoPromocao());
+        carrinho.setDescontoStrategy(new DescontoCupom());
         assertEquals("Desconto promocao (20%)", carrinho.getDescricaoDesconto());
     }
 }
